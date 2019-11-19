@@ -9,5 +9,8 @@ But the api should be rather straight forward.
 Some version of this runs on http://mdothello.appspot.com/othello
 The ui is not bugfree but you can have a look.
 
+The commits to this repo will automatically be deployed to 
+https://md-othello.herokuapp.com/swagger-ui.html#/othello-restcontroller
+
 
 enjoy!
