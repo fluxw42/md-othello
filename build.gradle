@@ -16,7 +16,7 @@ sourceCompatibility = '8'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 if (!hasProperty('mainClass')) {
-    ext.mainClass = 'be.md.Main'
+    ext.mainClass = 'be.Main'
 }
 
 repositories {
@@ -25,7 +25,5 @@ repositories {
 
 dependencies {    
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-data-rest")  
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")  
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }

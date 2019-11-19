@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package be.md;
+package be;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

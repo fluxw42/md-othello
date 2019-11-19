@@ -17,10 +17,7 @@ public class Position implements Serializable{
 	private int height;
 	private int[][] position;
 	private int score = 0;
-	
-	public Position() {
-		// TODO Auto-generated constructor stub
-	}
+
 	
 	public Position(int width, int height) {
 		this.width = width;
