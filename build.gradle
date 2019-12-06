@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
     }
     dependencies {
@@ -11,9 +12,16 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: "maven"
+
+group = "com.github.markdechamps.md-othello"
+version = "1.0.0-SNAPSHOT"
 
 sourceCompatibility = '8'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+jar.enabled = true
+bootJar.enabled = false
 
 if (!hasProperty('mainClass')) {
     ext.mainClass = 'be.Main'
